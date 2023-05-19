@@ -30,7 +30,7 @@ class BalanceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(25.0),
+      padding: EdgeInsets.all(25),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(25.0),
           boxShadow: [
@@ -62,9 +62,10 @@ class BalanceCard extends StatelessWidget {
                     Text(
                       title,
                       style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold),
+                        color: Colors.white,
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     Container(
                       width: 75,

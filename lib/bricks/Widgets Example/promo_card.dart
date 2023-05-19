@@ -32,7 +32,19 @@ class ImageCard extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 22,
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.bold,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black.withOpacity(.25),
+                        offset: Offset(1, 5),
+                        blurRadius: 3,
+                      ),
+                      Shadow(
+                        color: Colors.black.withOpacity(.25),
+                        offset: Offset(1, 5),
+                        blurRadius: 3,
+                      ),
+                    ]),
               ),
             ),
           ),
