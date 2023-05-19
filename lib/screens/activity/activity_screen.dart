@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:kebun_app/bricks/Widgets%20Example/promo_card.dart';
 
-import '../bricks/Widgets Example/horizontal_card.dart';
+import '../../bricks/Widgets Example/horizontal_card.dart';
 
 class Activity extends StatelessWidget {
   const Activity({super.key});
@@ -43,7 +43,7 @@ class Activity extends StatelessWidget {
             child: ImageCard(
               text: 'Fertilization',
               imageUrl:
-                  'https://live. staticflickr.com/4303/35496429643_748bd30fc8_b.jpg',
+                  'https://live.staticflickr.com/4303/35496429643_748bd30fc8_b.jpg',
             ),
           ),
           Padding(

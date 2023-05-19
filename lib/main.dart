@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:kebun_app/screens/activity_screen.dart';
-import 'package:kebun_app/screens/assets_screen.dart';
-import 'package:kebun_app/screens/employee_screen.dart';
-import 'package:kebun_app/screens/market_screen.dart';
-import 'package:kebun_app/screens/yield_screen.dart';
+import 'package:kebun_app/screens/activity/activity_screen.dart';
+import 'package:kebun_app/screens/asset/assets_screen.dart';
+import 'package:kebun_app/screens/employee/employee_screen.dart';
+import 'package:kebun_app/screens/marketplace/market_screen.dart';
+import 'package:kebun_app/screens/yield/yield_screen.dart';
 import 'package:kebun_app/authentication/register_screen.dart';
 
 void main() {

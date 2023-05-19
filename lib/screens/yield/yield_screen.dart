@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kebun_app/cardwidget.dart';
+import 'package:kebun_app/general-widget/cardwidget.dart';
 import 'package:kebun_app/price_card.dart';
-import 'package:kebun_app/delivery_record.dart';
+import 'package:kebun_app/screens/yield/delivery_record.dart';
 
 class Yield extends StatelessWidget {
   const Yield({super.key});
