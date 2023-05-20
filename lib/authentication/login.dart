@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-import '../screens/yield_screen.dart';
+import '../screens/yield/yield_screen.dart';
 import 'register_screen.dart';
 
 class MyWidget extends StatefulWidget {
