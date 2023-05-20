@@ -1,10 +1,32 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:kebun_app/bricks/Widgets Example/cardwidget.dart';
 import 'package:kebun_app/bricks/Widgets Example/price_card.dart';
 import 'package:kebun_app/bricks/Widgets Example/delivery_record.dart';
+import 'package:kebun_app/screens/yield/bar_graph.dart';
 
-class Yield extends StatelessWidget {
+class Yield extends StatefulWidget {
   const Yield({super.key});
+
+  @override
+  State<Yield> createState() => _YieldState();
+}
+
+class _YieldState extends State<Yield> {
+  final List<double> monthlySummary = [
+    10.0,
+    20.3,
+    30.0,
+    20.1,
+    25.9,
+    10.1,
+    20.1,
+    30.0,
+    20.5,
+    25.5,
+    30.1,
+    10.0,
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +47,7 @@ class Yield extends StatelessWidget {
                     'Yield',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 25,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -36,6 +58,18 @@ class Yield extends StatelessWidget {
       body: Center(
           child: ListView(
         children: [
+          SizedBox(
+            height: 10,
+          ),
+          SizedBox(
+            height: 200,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MyBarGraph(
+                monthlySummary: monthlySummary,
+              ),
+            ),
+          ),
           InkWell(
             onTap: () {
               Navigator.push(
