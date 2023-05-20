@@ -1,7 +1,15 @@
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 
 class DialogFb1 extends StatelessWidget {
-  DialogFb1({Key? key}) : super(key: key);
+  final String text;
+
+  Future<void> updateData(block) async {
+    final ref = FirebaseDatabase.instance.ref();
+    await ref.child('Grading/' + block).update({'accuracy': 0});
+  }
+
+  DialogFb1({Key? key, required this.text}) : super(key: key);
   final primaryColor = Colors.green[900];
   final accentColor = const Color(0xffffffff);
 
@@ -44,10 +52,18 @@ class DialogFb1 extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SimpleBtn1(text: "Yes", onPressed: () {}),
+                SimpleBtn1(
+                    text: "Yes",
+                    onPressed: () {
+                      var block = (text[text.length - 1]);
+                      updateData(block);
+                      Navigator.pop(context); // Close the dialog
+                    }),
                 SimpleBtn1(
                   text: "No",
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pop(context); // Close the dialog
+                  },
                   invertedColors: true,
                 ),
               ],
