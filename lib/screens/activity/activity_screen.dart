@@ -62,19 +62,20 @@ class Activity extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(12),
-            child: InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => MapGrid()),
-                );
-              },
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MapGrid()),
+                  );
+                },
                 child: ImageCard(
                   text: 'Road Maintenance',
                   imageUrl: 'assets/roadfix_activity.png',
                 ),
               ),
-              InkWell(
+            ),
+            InkWell(
               child: Padding(
                 padding: const EdgeInsets.all(12),
                 child: ImageCard(
@@ -89,7 +90,6 @@ class Activity extends StatelessWidget {
                 );
               },
             ),
-          ),
           ],
         )),
       ),
