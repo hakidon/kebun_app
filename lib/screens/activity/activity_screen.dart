@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kebun_app/bricks/Widgets%20Example/promo_card.dart';
-import 'package:kebun_app/screens/harvest.dart';
+import 'package:kebun_app/screens/activity/harvest.dart';
 import '../../bricks/Widgets Example/horizontal_card.dart';
 
 class Activity extends StatelessWidget {

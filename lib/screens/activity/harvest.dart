@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kebun_app/price_card.dart';
-import 'package:kebun_app/status_card.dart';
+import 'package:kebun_app/bricks/Widgets Example/price_card.dart';
+import 'package:kebun_app/bricks/Widgets Example/status_card.dart';
 
 class Harvest extends StatefulWidget {
   const Harvest({super.key});

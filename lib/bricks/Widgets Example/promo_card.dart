@@ -10,7 +10,7 @@ class ImageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: 150,
+      height: 130,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           gradient: const LinearGradient(
@@ -20,8 +20,13 @@ class ImageCard extends StatelessWidget {
           ClipRRect(
             // Radius
             borderRadius: BorderRadius.circular(20),
-            child: Image.network(imageUrl,
-                fit: BoxFit.cover, width: MediaQuery.of(context).size.width),
+            child: Image.network(
+              imageUrl,
+              fit: BoxFit.cover,
+              width: MediaQuery.of(context).size.width,
+              color: Colors.black.withOpacity(.2),
+              colorBlendMode: BlendMode.darken,
+            ),
           ),
           Align(
             alignment: Alignment.topRight,
@@ -32,7 +37,19 @@ class ImageCard extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 22,
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.bold,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black.withOpacity(.25),
+                        offset: Offset(1, 5),
+                        blurRadius: 3,
+                      ),
+                      Shadow(
+                        color: Colors.black.withOpacity(.25),
+                        offset: Offset(1, 5),
+                        blurRadius: 3,
+                      ),
+                    ]),
               ),
             ),
           ),
