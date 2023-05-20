@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:kebun_app/bricks/Widgets%20Example/promo_card.dart';
-
 import '../bricks/Widgets Example/horizontal_card.dart';
 
 class Activity extends StatelessWidget {
