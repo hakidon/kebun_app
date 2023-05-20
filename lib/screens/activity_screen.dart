@@ -42,7 +42,7 @@ class Activity extends StatelessWidget {
             child: ImageCard(
               text: 'Fertilization',
               imageUrl:
-                  'https://live. staticflickr.com/4303/35496429643_748bd30fc8_b.jpg',
+                  'https://live.staticflickr.com/4303/35496429643_748bd30fc8_b.jpg',
             ),
           ),
           Padding(
