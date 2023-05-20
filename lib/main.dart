@@ -1,18 +1,17 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:kebun_app/screens/activity/activity_screen.dart';
 import 'package:kebun_app/screens/assets/assets_screen.dart';
 import 'package:kebun_app/screens/employee/employee_screen.dart';
 import 'package:kebun_app/screens/market/market_screen.dart';
 import 'package:kebun_app/screens/yield/yield_screen.dart';
 import 'package:kebun_app/authentication/register_screen.dart';
-import 'package:firebase_core/firebase_core.dart';
 
-void main() async {
+Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   await Firebase.initializeApp();
-
   runApp(const MyApp());
 }
 

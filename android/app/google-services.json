@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1098722520686",
+    "project_id": "sawitcare-8a542",
+    "storage_bucket": "sawitcare-8a542.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098722520686:android:27ab1ba76847469207007f",
+        "android_client_info": {
+          "package_name": "com.example.kebun_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098722520686-jet435sse60a4nd2vmt87uum98o8elia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc7xA_0n4SwiZ9eBN3Tahzq9c6w3xQJ8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1098722520686-jet435sse60a4nd2vmt87uum98o8elia.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1098722520686-vlk7e4bds3rh6pq2nldga7vcf4ig474g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.kebunApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
