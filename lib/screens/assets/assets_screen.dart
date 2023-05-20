@@ -24,7 +24,7 @@ class Assets extends StatelessWidget {
                     'Assets',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 25,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

@@ -24,7 +24,7 @@ class Market extends StatelessWidget {
                     'Market',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 25,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
