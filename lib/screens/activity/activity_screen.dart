@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kebun_app/bricks/Widgets%20Example/promo_card.dart';
+import 'package:kebun_app/screens/googlemap/MapGrid.dart';
 import 'package:kebun_app/screens/activity/harvest.dart';
 import '../../bricks/Widgets Example/horizontal_card.dart';
 
@@ -61,9 +62,17 @@ class Activity extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(12),
-              child: ImageCard(
-                text: 'Road Maintenance',
-                imageUrl: 'assets/roadfix_activity.png',
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MapGrid()),
+                  );
+                },
+                child: ImageCard(
+                  text: 'Road Maintenance',
+                  imageUrl: 'assets/roadfix_activity.png',
+                ),
               ),
             ),
             InkWell(
