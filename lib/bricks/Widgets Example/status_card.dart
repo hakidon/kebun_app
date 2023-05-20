@@ -70,7 +70,8 @@ class StatusCard extends StatelessWidget {
                     // Call this in a function
                     () => showDialog<Dialog>(
                         context: context,
-                        builder: (BuildContext context) => DialogFb1()),
+                        builder: (BuildContext context) =>
+                            DialogFb1(text: this.text)),
                 child: Text('Update',
                     style: TextStyle(
                       color: Colors.white,
